@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int descuento;
+
+    float precio, precioConDescuento;
+
+    descuento = 15;
+
+    printf("Ingrese el total de la compra: \n");
+
+    scanf("%f", &precio);
+
+    //con un punto y un numero en el tipo de la variable podes limitar la cantidad de decimales del float
+    //printf("%.0f", precio);
+
+    precioConDescuento = precio - ((precio/100)*descuento);
+
+    printf("\nEl total menos el descuento es:%.2f", precioConDescuento);
+
+    return 0;
+
+
+}
