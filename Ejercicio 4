@@ -3,6 +3,8 @@
 
 int main()
 {
+    //Determinar si un alumno aprueba o desaprueba un curso, sabiendo que aprobara con un promedio de tres notas mayor o igual a 7.
+    
     int contador;
     float nota, total, promedio;
     total = 0;
