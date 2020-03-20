@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int contador;
+    float nota, total, promedio;
+    total = 0;
+    nota = 0;
+    promedio = 0;
+    contador = 0;
+    printf("Ingrese las tres notas del alumno: \n");
+    do{
+        do {
+            printf("\ningrese un numero valido positivo:");
+            scanf("%f", &nota);
+            if (nota <= 0 || nota >= 10) {
+                contador--;
+                nota = 0;
+            }
+        } while (nota <= 0 && nota >= 10);
+
+        total = total + nota;
+        contador++;
+
+    } while (contador < 3);
+
+    promedio = total/3;
+
+    printf("%.2f", promedio);
+
+    if (promedio >= 7) {
+        printf("\nEl alumno esta aprobado.");
+
+    } else {
+        printf("\nel alumno esta desaprobado.");
+    }
+
+    return 0;
+}
