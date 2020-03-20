@@ -3,6 +3,9 @@
 
 int main()
 {
+    
+    // Un maestro desea saber que porcentaje de hombres y de mujeres hay en su grupo de estudiantes.
+    
     int hombres, mujeres;
     float porcentajeHombres, PorcentajeMujeres, total;
 
