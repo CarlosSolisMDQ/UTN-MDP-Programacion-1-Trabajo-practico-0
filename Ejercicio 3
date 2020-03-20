@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int hombres, mujeres;
+    float porcentajeHombres, PorcentajeMujeres, total;
+
+    do {
+        printf("Ingrese el numero de alumnos hombres: \n");
+        scanf("%d", &hombres);
+    } while ( hombres <= 0 );
+
+    do {
+        printf("Ingrese el numero de alumnos mujeres \n");
+        scanf("%d", &mujeres);
+    } while ( mujeres <= 0 );
+
+    total = mujeres + hombres;
+
+    porcentajeHombres = (hombres/total)*100;
+    PorcentajeMujeres = (mujeres/total)*100;
+
+    printf("\nEl total de alumnos en la comision es:%d", total);
+
+    printf("\nEl porcentaje de hombres respecto al total es:%.2f", porcentajeHombres);
+    printf("\nEl porcentaje de mujeres respecto al total es:%.2f", PorcentajeMujeres);
+
+
+    return 0;
+}
