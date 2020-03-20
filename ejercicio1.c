@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    float monto = 0;
+    float meses = 0;
+    float interes = 0.02;
+    float total = 0;
+    float aux = 0;
+
+
+    do {
+        printf("Ingrese el monto que desea invertir:");
+        scanf( "%f", &monto);
+    } while (monto <= 0);
+
+
+    printf( "%f\n", monto);
+
+    do {
+    printf("Ingrese el numero de meses para su plazo fijo:");
+    scanf("%f", &meses);
+    } while (meses <= 0);
+
+    printf("%f\n", meses);
+
+    aux = 1 + interes;
+
+    total = monto * pow(aux,  meses);
+
+
+    printf("El total mas intereses es: %f\n", total);
+
+
+
+    return 0;
+}
