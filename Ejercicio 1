@@ -4,6 +4,10 @@
 
 int main()
 {
+    /*Suponga que un individuo desea invertir su capital en un banco 
+     y desea saber cuanto dinero ganara despues de un mes si la tasa es de 2% mensual.
+    */
+    
     float monto = 0;
     float meses = 0;
     float interes = 0.02;
