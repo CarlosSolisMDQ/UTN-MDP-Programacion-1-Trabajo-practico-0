@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    
+    //En un almacen se hace un 20% de descuento a los clientes cuya compra supera los 5000 pesos, 
+    //cual sera la cantidad que pagara una persona por su compra?
+    float precio, precioFinal;
+    int descuento;
+    descuento = 20;
+    printf("Ingrese el monto de la compra:\n");
+    scanf("%f", &precio);
+
+    if (precio > 5000) {
+        precioFinal = precio;
+        precioFinal = precioFinal - ((precioFinal/100) * descuento);
+        printf("El monto a abonar menos descuento es:\n");
+        printf("%.2f", precioFinal);
+    } else {
+        precioFinal = precio;
+        printf("El monto a abonar es:\n");
+        printf("%.2f", precioFinal);
+    }
+    return 0;
+}
