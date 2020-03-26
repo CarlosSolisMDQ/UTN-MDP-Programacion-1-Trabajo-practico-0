@@ -1,0 +1,23 @@
+int main()
+{
+    int num1, num2, total;
+
+    //leer 2 numeros, si son iguales que los multiplique, si el primero es mayor que los reste y si no, que los sume.
+    
+    printf("Ingrese dos numeros:\n");
+
+    scanf("%d %d", &num1, &num2);
+
+    if (num1 == num2) {
+        total = num1 * num2;
+    } else {
+        if(num1 > num2){
+            total = num1 - num2;
+        } else {
+            total = num1 + num2;
+        }
+    }
+
+    printf("el recultado es: %d", total);
+    return 0;
+}
