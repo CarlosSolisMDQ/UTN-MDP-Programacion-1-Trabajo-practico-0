@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main()
+
+
+{
+
+
+// calcular el promedio de un alumno que tiene 7 calificaciones.
+
+  int counter, num, sum;
+    float promedio;
+    counter = 0;
+    sum = 0;
+    do {
+        printf("ingrese un numero:");
+        scanf("%d", &num);
+        sum = sum + num;
+        counter++;
+    } while (counter != 7);
+
+    promedio = sum/7;
+
+    printf("%f", promedio);
+
+    return 0;
+}
