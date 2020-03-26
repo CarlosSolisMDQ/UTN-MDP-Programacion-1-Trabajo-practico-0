@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    //leer 10 numeros y abtener su cubo y su cuarta
+    int num, cubo, cuarta, counter;
+
+    counter = 0;
+
+    do {
+        printf("ingrese un numero:\n");
+        scanf("%d", &num);
+        cubo = pow(num, 3);
+        cuarta = pow(num, 4);
+        printf("%d %d\n", cubo, cuarta);
+        counter++;
+    } while (counter != 10);
+
+
+
+    return 0;
+}
