@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+
+    int total, menor, counter;
+    float promedio;
+    int arr2[40];
+
+    fflush(stdin);
+    counter = 0;
+    promedio = 0;
+    menor = 0;
+    total = 0;
+
+    //Suponga que se tiene un grupo de calificaciones de un grupo de
+    //40 alumnos. Calcular la calificacion media y la calificacion menor.
+
+
+
+    do {
+        printf("ingrese una calificacion:\n");
+        do {
+            scanf("%d", &arr2[counter]);
+
+        } while (arr2[counter] < 0);
+        counter++;
+    } while (counter != 40);
+
+    fflush(stdin);
+    menor = arr2[0];
+
+    for(int i = 0; i <40; i++) {
+
+        total += arr2[i];
+
+        if (arr2[i] < menor) {
+            menor = arr2[i];
+        }
+    }
+
+
+    promedio = ((float)total/44);
+
+    printf("\nEl promedio de todas las notas de los estudiantes es: %.2f", promedio);
+    printf("\nLa calificacion mas baja es: %d", menor);
+
+    return 0;
+}
