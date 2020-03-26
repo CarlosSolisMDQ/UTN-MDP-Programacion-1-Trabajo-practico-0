@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Calcular e imprimir la tabla de multiplicar de un numero. imprimir el multiplicando, el multiplicador y el producto.
+int main()
+{
+
+    int num, aux;
+    printf("ingrese un numero:");
+    scanf("%d", &num);
+
+    for (int i = 1; i <= 10; i++) {
+        aux = num * i;
+        printf("%d x %d = %d\n", num, i, aux);
+    }
+
+    return 0;
+}
