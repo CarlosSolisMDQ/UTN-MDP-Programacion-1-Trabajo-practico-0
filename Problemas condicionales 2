@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //leer tres numero y imprimir el mayor de los tres.
+    
+    int num, counter, aux;
+    counter = 0;
+    aux = 0;
+    do {
+        printf("Ingrese un numero:\n");
+        scanf("%d", &num);
+
+        if (num >= aux) {
+            aux = num;
+        }
+        counter++;
+    } while (counter != 3);
+
+    printf("el numero mayor es: %d", aux);
+
+    return 0;
+}
