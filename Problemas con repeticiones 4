@@ -4,22 +4,30 @@
 
 int main()
 {
-    int num, cubo, cuarta, counter;
+    int counter;
 
-    int arr[15];
+    int arr[10];
+    
     fflush(stdin);
     counter = 0;
     //leer 10 numeros negativos y convertirlos a positivos y imprimirlos.
+    
     do {
+        
         printf("ingrese un numero negativo:\n");
+        
         do {
+            
             scanf("%d", &arr[counter]);
 
         } while (arr[counter] > 0);
+        
         counter++;
-    } while (counter != 15);
+    
+    } while (counter != 10);
 
-    for(int i = 0; i <15; i++) {
+    for(int i = 0; i <10; i++) {
+        
         if ( arr[i] < 0) {
             arr[i] = abs(arr[i]);
             printf("%d\n", arr[i]);
