@@ -4,7 +4,7 @@
 
 int main()
 {
-    int num, cubo, cuarta, counter;
+    int counter;
     int arr[10];
     counter = 0;
     
